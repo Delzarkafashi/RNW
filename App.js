@@ -6,6 +6,7 @@ import ViewItemsScreen from './screens/ViewItemsScreen';
 import AddItemScreen from './screens/AddItemScreen';
 import { Ionicons } from '@expo/vector-icons';
 
+
 const Tab = createBottomTabNavigator();
 
 export default function App() {
