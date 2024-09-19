@@ -53,14 +53,17 @@ app.post('/add-item', (req, res) => {
 // Endpoint för att hämta alla objekt
 app.get('/items', (req, res) => {
     const query = 'SELECT * FROM items';
+    
     db.query(query, (err, results) => {
       if (err) {
         console.error('Error fetching data:', err);
         return res.status(500).json({ message: 'Database error' });
       }
-      res.json(results);
+  
+      res.json(results); // Returnerar JSON-data till frontend
     });
   });
+  
   
   
 
