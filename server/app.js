@@ -4,6 +4,11 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
+// cd server node app.js
+
+// visa mysql -u root -pDelzar_1985! -e "USE items; SHOW TABLES;"
+
+
 app.use(express.json());
 app.use(cors());  // Lägg till denna rad för att aktivera CORS
 

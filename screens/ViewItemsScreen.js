@@ -10,6 +10,7 @@ export default function ViewItemsScreen() {
     // Funktion för att hämta items från backend
     const fetchItems = async () => {
       try {
+        //api
         const response = await fetch('http://localhost:3000/items'); // Ändra till din backend-url
         const data = await response.json();
         
