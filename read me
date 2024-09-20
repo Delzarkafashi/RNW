@@ -1,6 +1,5 @@
 #  För att hantera lösenord och sessioner: npm install bcryptjs jsonwebtoken 
 
 
-#  Det verkar som om du har problem med Content Security Policy (CSP), 
-#  vilket kan blockera vissa resurser och skript från att laddas på din webbsida. 
-#  Här är några steg för att hantera dessa problem: npm install helmet
+#   Content Security Policy (CSP) kan blockera vissa resurser och skript från att laddas på din webbsida. 
+#  vi måste ha detta för det : npm install helmet
