@@ -41,7 +41,7 @@ db.connect(err => {
   }
   console.log('Connected to the MySQL database.');
 });
-
+//api
 app.post('/add-item', (req, res) => {
     const { name, description } = req.body;
   
@@ -68,7 +68,7 @@ app.post('/add-item', (req, res) => {
     });
   });
 
-  // Endpoint för att hämta alla objekt
+  // api
 app.get('/items', (req, res) => {
   const query = 'SELECT * FROM items';
   
@@ -82,7 +82,7 @@ app.get('/items', (req, res) => {
   });
 });
 
-
+//api
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
 
@@ -109,7 +109,7 @@ app.post('/register', async (req, res) => {
 
 
 
-// Login a user
+// api
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
@@ -157,7 +157,7 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
-// Example protected route
+// api
 app.get('/protected', authenticateToken, (req, res) => {
   res.json({ message: 'This is a protected route', user: req.user });
 });
