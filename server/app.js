@@ -23,7 +23,7 @@ app.use(helmet.contentSecurityPolicy({
 
 
 app.use(express.json());
-app.use(cors());  // Lägg till denna rad för att aktivera CORS
+app.use(cors());  //aktivera CORS
 
 // Skapa MySQL-anslutning
 const db = mysql.createConnection({
