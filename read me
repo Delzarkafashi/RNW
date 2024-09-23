@@ -1,0 +1,9 @@
+#  För att hantera lösenord och sessioner: npm install bcryptjs jsonwebtoken
+
+
+#   Content Security Policy (CSP) kan blockera vissa resurser och skript från att laddas på din webbsida.
+#  vi måste ha detta för det : npm install helmet
+
+# för home och sånt ska haman i topen
+# npm install @react-navigation/material-top-tabs react-native-tab-view
+
